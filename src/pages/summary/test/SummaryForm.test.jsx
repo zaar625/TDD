@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 
 test("Initial conditions", () => {
   render(<SummaryForm />);
+  //getByRole : find by aria role
   const checbox = screen.getByRole("checkbox", {
     name: /terms and conditions/i,
   });
@@ -35,6 +36,7 @@ test("popover responds to hover", async () => {
   render(<SummaryForm />);
 
   //popover start out hidden
+  //ByText find by element text content
   const nullPopover = screen.queryByText(
     /no ice cream will actually be delivered/i
   );
