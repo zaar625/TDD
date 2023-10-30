@@ -3,7 +3,7 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import "@testing-library/jest-dom";
-import { beforeAll, afterEach, afterAll } from "vitest";
+// import { beforeAll, afterEach, afterAll } from "vitest";
 import { server } from "./mocks/server.js";
 
 beforeAll(() => server.listen());
